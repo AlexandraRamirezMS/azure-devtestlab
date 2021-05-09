@@ -2,6 +2,12 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
+resources:
+  repositories:
+  - repository: common
+    type: github
+    name: MicrosoftDocs/azure-devops-docs
+    endpoint: github.com_AlexandraRamirezMS
 
 trigger:
 - master
@@ -17,3 +23,4 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
